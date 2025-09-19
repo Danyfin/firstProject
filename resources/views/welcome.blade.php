@@ -15,6 +15,11 @@
         
     </head>
     <body>
+    <h1><a href="{{route('home')}}" >Главная</a></h1>
+    <a href="{{route('about')}}" >О нас</a>
+    <a href="/contacts" >Контакты</a>
+
+
        <h1>Привет!</h1>
         <div class="container">
             @for($i = 1; $i<=12; $i++)
