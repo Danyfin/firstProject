@@ -15,5 +15,6 @@
     <h2><a href="{{route('home')}}" >Главная</a></h2>
     <a href="{{route('about')}}" >О нас</a>
     <a href="/contacts" >Контакты</a>
+    <a href="/products" >Каталог</a>
 </body>
 </html>

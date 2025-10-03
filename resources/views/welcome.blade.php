@@ -18,6 +18,9 @@
     <h1><a href="{{route('home')}}" >Главная</a></h1>
     <a href="{{route('about')}}" >О нас</a>
     <a href="/contacts" >Контакты</a>
+    <a href="/products" >Каталог</a>
+
+
 
 
        <h1>Привет!</h1>

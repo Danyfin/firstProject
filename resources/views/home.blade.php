@@ -15,6 +15,8 @@
             <li><a href="">Каталог</a></li>
             <li><a href="">О нас</a></li>
             <li><a href="">Контакты</a></li>
+            <li><a href="/products" >Каталог</a></li>
+
         </ul>
     </div>
     </header>
