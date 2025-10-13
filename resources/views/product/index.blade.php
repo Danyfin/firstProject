@@ -15,6 +15,7 @@
                 <div class="card">
                     <p>{{$product->name}}</p>
                     <p>{{$product->description}}</p>
+                    <p>Категория: {{$product->category->name}}</p>
                     <p>Цена: {{$product->price}} &#8381</p>
                     <hr>
                     <form method="POST" action="{{route('products.destroy', $product->id)}}">
