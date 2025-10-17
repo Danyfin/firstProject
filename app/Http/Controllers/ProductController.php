@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Buyer;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
@@ -10,7 +12,9 @@ class ProductController extends Controller
     public function index()
     {
      $products = Product::all();
-     return view('product.index', compact('products'));
+     $buyer = Buyer::find(3);
+    $categories = Category::all();
+     return View('product.index', compact('products', 'buyer', 'categories'));
     }
     public function destroy(Product $product)
     {

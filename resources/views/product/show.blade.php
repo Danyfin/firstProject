@@ -15,5 +15,12 @@
     <h2>{{$product->name}}</h2>
     <p>{{$product->price}}</p>
     <p>{{$product->description}}</p>
+
+    @foreach ($product->features as $feature)
+        <div>
+            <p>{{$feature->name}}</p>
+            <p>{{$feature->pivot->value}} {{$feature->unit}}</p>
+        </div>
+    @endforeach
 </body>
 </html>

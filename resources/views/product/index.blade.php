@@ -8,6 +8,13 @@
 </head>
 <body>
     <h1>Каталог товаров</h1>
+    <p>{{$buyer->user->name}}</p>
+    <p>{{$buyer->name}}</p>
+
+    @foreach ( $categories as $category )
+    <h2>{{$category -> name}}</h2>
+    
+
     <div class="container">
         <a href="{{route('products.create')}}">Cоздать Товар</a>
         @foreach($products as $product)
@@ -15,8 +22,8 @@
                 <div class="card">
                     <p>{{$product->name}}</p>
                     <p>{{$product->description}}</p>
-                    <p>Категория: {{$product->category->name}}</p>
                     <p>Цена: {{$product->price}} &#8381</p>
+                    <p>Категория: {{$product->category->name}}</p>
                     <hr>
                     <form method="POST" action="{{route('products.destroy', $product->id)}}">
                     @csrf
@@ -28,5 +35,6 @@
             </a>
         @endforeach
     </div>
+    @endforeach
 </body>
 </html>
